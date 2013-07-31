@@ -18,6 +18,7 @@
 		CD91923117A642150004739D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD91923017A642150004739D /* Default-568h@2x.png */; };
 		CD91923417A642150004739D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD91923217A642150004739D /* MainStoryboard.storyboard */; };
 		CD91923717A642150004739D /* GHBCalLoanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD91923617A642150004739D /* GHBCalLoanViewController.m */; };
+		F51CD74B17A79C830045733D /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F51CD74917A79C830045733D /* libsqlite3.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		CD91923317A642150004739D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		CD91923517A642150004739D /* GHBCalLoanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHBCalLoanViewController.h; sourceTree = "<group>"; };
 		CD91923617A642150004739D /* GHBCalLoanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHBCalLoanViewController.m; sourceTree = "<group>"; };
+		F51CD74917A79C830045733D /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F51CD74B17A79C830045733D /* libsqlite3.0.dylib in Frameworks */,
 				CD91921B17A642150004739D /* UIKit.framework in Frameworks */,
 				CD91921D17A642150004739D /* Foundation.framework in Frameworks */,
 				CD91921F17A642150004739D /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +59,7 @@
 		CD91920E17A642140004739D = {
 			isa = PBXGroup;
 			children = (
+				F51CD75117A7A4500045733D /* Resources */,
 				CD91922017A642150004739D /* GHBCalLoan */,
 				CD91921917A642150004739D /* Frameworks */,
 				CD91921817A642150004739D /* Products */,
@@ -73,6 +77,7 @@
 		CD91921917A642150004739D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F51CD74917A79C830045733D /* libsqlite3.0.dylib */,
 				CD91921A17A642150004739D /* UIKit.framework */,
 				CD91921C17A642150004739D /* Foundation.framework */,
 				CD91921E17A642150004739D /* CoreGraphics.framework */,
@@ -83,11 +88,9 @@
 		CD91922017A642150004739D /* GHBCalLoan */ = {
 			isa = PBXGroup;
 			children = (
-				CD91922917A642150004739D /* GHBCalLoanAppDelegate.h */,
-				CD91922A17A642150004739D /* GHBCalLoanAppDelegate.m */,
-				CD91923217A642150004739D /* MainStoryboard.storyboard */,
-				CD91923517A642150004739D /* GHBCalLoanViewController.h */,
-				CD91923617A642150004739D /* GHBCalLoanViewController.m */,
+				F51CD74F17A7A4230045733D /* View */,
+				F51CD74E17A7A4140045733D /* Controller */,
+				F51CD74D17A7A4010045733D /* Delegate */,
 				CD91922117A642150004739D /* Supporting Files */,
 			);
 			path = GHBCalLoan;
@@ -105,6 +108,39 @@
 				CD91923017A642150004739D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F51CD74D17A7A4010045733D /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				CD91922917A642150004739D /* GHBCalLoanAppDelegate.h */,
+				CD91922A17A642150004739D /* GHBCalLoanAppDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		F51CD74E17A7A4140045733D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD91923517A642150004739D /* GHBCalLoanViewController.h */,
+				CD91923617A642150004739D /* GHBCalLoanViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F51CD74F17A7A4230045733D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD91923217A642150004739D /* MainStoryboard.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F51CD75117A7A4500045733D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +335,7 @@
 				CD91923C17A642150004739D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
